@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing API dependencies
+      - npm install -g serverless
+      - echo Installing admin API dependencies
+      - cd api/admin
+      - npm install --silent
+      # - echo Finished installing admin API dependencies
+  build:
+    commands:
+      - echo Running Unit Tests
+      - npm run test
+  post_build:
+    commands:
+      - echo Deploying admin API
+      - serverless deploy
+      - echo Finished deploying admin API
+
+cache:
+  paths:
+    - 'api/admin/node_modules/**/*'

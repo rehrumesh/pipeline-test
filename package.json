@@ -1,0 +1,19 @@
+{
+  "name": "pipe-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Test completed\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rehrumesh/pipeline-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rehrumesh/pipeline-test/issues"
+  },
+  "homepage": "https://github.com/rehrumesh/pipeline-test#readme"
+}
