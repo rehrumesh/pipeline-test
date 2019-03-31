@@ -20,6 +20,8 @@ service: pipe-test # NOTE: update this with your service name
 provider:
   name: aws
   runtime: nodejs8.10
+  stage: ${opt:stage, 'dev'}
+  region: eu-central-1
 
 # you can overwrite defaults here
 #  stage: dev

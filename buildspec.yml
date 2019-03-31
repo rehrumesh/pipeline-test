@@ -5,8 +5,6 @@ phases:
     commands:
       - echo Installing API dependencies
       - npm install -g serverless
-      - echo Installing admin API dependencies
-      - cd api/admin
       - npm install --silent
       # - echo Finished installing admin API dependencies
   build:
@@ -21,4 +19,4 @@ phases:
 
 cache:
   paths:
-    - 'api/admin/node_modules/**/*'
+    - 'node_modules/**/*'
